@@ -2,39 +2,54 @@ package gestione_asta.dto;
 
 public class UtenteDTO {
 	
+	public UtenteDTO() {}
 	
 	
-	public UtenteDTO(String username, String lastName, String firstName) {
-		this.username = username;
-		this.lastName = lastName;
-		this.firstName = firstName;
-	}
-	
+	private String name;
+	private String surname;
+	private String email;
 	private String username;
-	private String lastName;
-	private String firstName;
+	private String password;
+	public String getName() {
+		return name;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public String getEmail() {
+		return email;
+	}
 	public String getUsername() {
 		return username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getLastName() {
-		return lastName;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	
+	public UtenteDTO(String name, String surname, String email, String username, String password) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.email = email;
+		this.username = username;
+		this.password = password;
 	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	@Override
-	public String toString() {
-		return "UtenteDTO [username=" + username + ", lastName=" + lastName + ", firstName=" + firstName + "]";
-	}
+	
 	
 	
 

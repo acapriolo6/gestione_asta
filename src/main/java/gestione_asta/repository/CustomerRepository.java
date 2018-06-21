@@ -5,11 +5,11 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import gestione_asta.model.Utente;
+import gestione_asta.model.Customer;
 
 @Repository
-public interface UtenteRepository extends JpaRepository<Utente, String>{
+public interface CustomerRepository extends JpaRepository<Customer, Long>{
 	
-	List<Utente> findByLastName(String string);
+	//List<Customer> findByLastName(L string);
 
 }
